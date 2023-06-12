@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    background-color: #151515;
+    color: white;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+/* head section */
+#menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    padding: 6px 12px;
+    margin-right: 10px;
+    color: white;
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+#themeIcon {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    right: 90px;
+    padding: 1rem;
+    width: 25vw;
+    text-align: center;
+    /* background-color: #008CBA; */
+    visibility: hidden;
+    transition: all 0.1s ease-in-out;
+}
+
+#nav.active {
+    visibility: visible;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+nav li a {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+nav li a:active {
+    color: #66BFBF;
+}
+
+.top-container {
+    background-color: #151515;
+    margin: 0px auto;
+    padding-top: 120px;
+    position: relative;
+    margin-bottom: 80px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.top-container h1 {
+    font-family: 'Sacramento', sans-serif;
+    font-size: 6.5rem;
+}
+
+.top-container h2 {
+    padding-bottom: 80px;
+}
+
+#cloud1 {
+    position: absolute;
+    top: 20%;
+    right: -30%;
+    animation: cloudRight 1.5s ease-in;
+}
+
+@keyframes cloudRight {
+    0% {
+        position: absolute;
+        top: 20%;
+        right: 15%;
+    }
+
+    100% {
+        position: absolute;
+        top: 20%;
+        right: -30%;
+    }
+}
+
+#cloud2 {
+    position: absolute;
+    top: 50%;
+    left: -25%;
+    animation: cloudLeft 1.5s ease-in;
+}
+@keyframes cloudLeft {
+    0% {
+        position: absolute;
+    top: 50%;
+    left: 20%;
+    }
+
+    100% {
+        position: absolute;
+    top: 50%;
+    left: -25%;
+    }
+}
+
+/* content-section */
+hr {
+    border: 6px dotted #f0efef;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile h2 {
+    margin: 30px 0px;
+}
+
+.profile p {
+    width: 30%;
+    margin: 0px auto;
+}
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    padding: 1rem;
+    text-align: left;
+    line-height: 2;
+    background-color: #1b1b1b;
+    overflow: hidden;
+}
+
+.skill-row h3 {
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+}
+
+.skill-row .img-1 {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.skill-row .img-2 {
+    width: 25%;
+    float: right;
+    margin-right: 30px;
+}
+
+/* contact */
+.contact-me h2 {
+    padding-bottom: 30px;
+}
+
+.contact-me h3 {
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.contact-me p {
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+}
+
+.contact-me button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-me button:hover {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+}
+
+/* footer */
+.bottom-container {
+    height: 200px;
+    margin-top: 100px;
+    background-color: #1b1b1b;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 0px;
+}
+
+.footer-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 30px 20px;
+}
+
+.bottom-container a {
+    font-size: 1rem;
+    color: white;
+
+}
+
+.bottom-container p {
+    font-size: 0.8rem;
+}
+
+.bottom-container p a {
+    font-size: 0.8rem;
+    color: white;
+}
+
